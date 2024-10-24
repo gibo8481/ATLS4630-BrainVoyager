@@ -78,7 +78,7 @@ function main() {
     
 
     // GLTFLoader to load the brain model
-    const loader = new GLTFLoader().setPath('public/brain_model/');
+    const loader = new GLTFLoader().setPath('/brain_model/');
     loader.load('brain_model_2.gltf', (gltf) => {
         const brain = gltf.scene;
     
