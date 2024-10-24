@@ -1,6 +1,6 @@
 # Interactive Brain Model Quiz
 ## How-to-Use
-This is a quiz on the brain lobes and their basic functions. Hovering over each region will highlight it in a random color, and clicking on a region will prompt a quiz question. Here is the [link](https://atls-4630-brain-voyager-final.vercel.app/) to the deployed website.
+This is a quiz on the brain lobes and their basic functions. Hovering over each region will highlight it in a random color, and clicking on a region will prompt a quiz question. Here is the [link](https://atls-4630-brain-voyager-final.vercel.app/) to the deployed website. Keep it mind it takes a few seconds to load :).
 ## Resources
 I relied heavily on the Three.js manual and documentation throughout this project, making it a significant learning experience. I also referenced several YouTube videos for additional guidance.
 - [Brain Model](https://poly.cam/capture/FC93B188-ED88-4B05-91B7-B81C766B1614?)
