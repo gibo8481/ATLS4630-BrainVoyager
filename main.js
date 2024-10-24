@@ -103,7 +103,7 @@ function main() {
 
         scene.add(brain);
 
-        // Render the scene
+        // render the scene
         function render() {
             if (resizeRendererToDisplaySize(renderer)) {
                 const canvas = renderer.domElement;
@@ -227,7 +227,7 @@ function main() {
                     <button onclick="submitAnswer('C')">C) Higher cognitive functions</button>
                     <button onclick="submitAnswer('D')">D) Sensory processing</button>
                 `;
-                correctAnswer = 'C';  // Set the correct answer
+                correctAnswer = 'C'; 
             } else if (brainPart === "Temporal_Lobe") {
                 quizQuestion.textContent = "What is the primary function of the temporal lobe?";
                 quizOptions.innerHTML = `
@@ -236,7 +236,7 @@ function main() {
                     <button onclick="submitAnswer('C')">C) Sensory information processing</button>
                     <button onclick="submitAnswer('D')">D) Motor control</button>
                 `;
-                correctAnswer = 'B';  // Set the correct answer
+                correctAnswer = 'B';  
             } else if (brainPart === "Parietal_Lobe") {
                 quizQuestion.textContent = "What is the primary function of the parietal lobe?";
                 quizOptions.innerHTML = `
@@ -245,7 +245,7 @@ function main() {
                     <button onclick="submitAnswer('C')">C) Speech production</button>
                     <button onclick="submitAnswer('D')">D) Hearing</button>
                 `;
-                correctAnswer = 'A';  // Set the correct answer
+                correctAnswer = 'A';  
             } else if (brainPart === "Occipital_Lobe") {
                 quizQuestion.textContent = "What is the primary function of the occipital lobe?";
                 quizOptions.innerHTML = `
@@ -254,14 +254,14 @@ function main() {
                     <button onclick="submitAnswer('C')">C) Visual processing</button>
                     <button onclick="submitAnswer('D')">D) Balance</button>
                 `;
-                correctAnswer = 'C';  // Set the correct answer
+                correctAnswer = 'C';  
             }
             
-            quizContainer.style.display = 'block';  // Show the quiz
+            quizContainer.style.display = 'block';  // show the quiz
         }
 
         function hideQuiz() {
-            quizContainer.style.display = 'none';  // Hide quiz container
+            quizContainer.style.display = 'none';  // hide quiz container
         }
     
         // Close quiz when the close button is clicked
@@ -272,13 +272,13 @@ function main() {
             
         if (answer === correctAnswer) {
             feedback.textContent = "Correct! Great job!";
-            feedback.style.color = "green"; // Feedback in green for correct answer
+            feedback.style.color = "green"; // feedback in green for correct answer
         } else {
             feedback.textContent = `Incorrect. The correct answer was ${correctAnswer}.`;
-            feedback.style.color = "red";  // Feedback in red for incorrect answer
+            feedback.style.color = "red";  // feedback in red for incorrect answer
         }
 
-        // Hide the quiz after a few seconds and clear the feedback
+        // hide the quiz after a few seconds and clear the feedback
         setTimeout(() => {
             hideQuiz();
             feedback.textContent = "";  // Clear feedback
