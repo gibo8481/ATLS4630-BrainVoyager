@@ -34,7 +34,7 @@ html{
     color: white;
  }
  #quiz-container {
-   display: none; /* Initially hidden */
+   display: none;
    position: absolute;
    top: 50%;
    right: 50px;
