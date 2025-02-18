@@ -2,6 +2,7 @@ import * as THREE from 'three';
 import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
 import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
 
+
 // elements for quiz
 const closeQuiz = document.getElementById('close-quiz');
 const quizContainer = document.getElementById('quiz-container');

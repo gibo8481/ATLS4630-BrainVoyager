@@ -1,0 +1,12 @@
+{
+    "headers": [
+      {
+        "source": "/brain_model/:path*",
+        "headers": [
+          { "key": "Access-Control-Allow-Origin", "value": "*" },
+          { "key": "Content-Type", "value": "model/gltf+json" }
+        ]
+      }
+    ]
+  }
+  
