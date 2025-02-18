@@ -13,5 +13,10 @@
   },
   "dependencies": {
     "three": "^0.169.0"
-  }
+  },
+  "main": "main.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
 }
