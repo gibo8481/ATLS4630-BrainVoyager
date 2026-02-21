@@ -17,7 +17,14 @@
 </head>
 <body>
   <canvas id="c"> </canvas>
-  <div id="progress-container"></div> <!-- for debugging -->
+  <div id="progress-container">
+    <div class="loading-content">
+        <p id="loading-text">Loading 3D model: 0%</p>
+        <div class="loading-bar-container">
+            <div id="loading-bar"></div>
+        </div>
+    </div>
+</div>
   <div id="heading">Interactive Brain Quiz</div>
   <div id="border"></div>
    <!-- quiz Container -->

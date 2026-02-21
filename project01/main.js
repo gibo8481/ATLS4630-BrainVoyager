@@ -93,6 +93,7 @@ function main() {
                     child.visible = true;       
             }
         }
+
         });
         
         // scale the brain model to make it larger and more visible
@@ -103,6 +104,8 @@ function main() {
         brain.position.set(0, 1.05, 0);  // position the brain at the center of the scene
 
         scene.add(brain);
+
+       
 
         // render the scene
         function render() {
@@ -134,11 +137,17 @@ function main() {
 
     animate();
        
+    // hide the loading progress bar once the model is loaded
         document.getElementById('progress-container').style.display = 'none';
+
+        // update the loading progress bar as the model loads
     }, (xhr) => {
+        const progressComplete = Math.round((xhr.loaded / xhr.total) * 100);
+        document.getElementById('loading-text').textContent = `Loading 3D model: ${progressComplete}%`;
         console.log(`Loading model: ${xhr.loaded / xhr.total * 100}%`);
     }, (error) => {
         console.error(error);
+        document.getElementById('loading-text').textContent = 'Error loading 3D model. Please try refreshing the page.';
     }
 );
     
