@@ -142,8 +142,14 @@ function main() {
 
         // update the loading progress bar as the model loads
     }, (xhr) => {
-        const progressComplete = Math.round((xhr.loaded / xhr.total) * 100);
-        document.getElementById('loading-text').textContent = `Loading 3D model: ${progressComplete}%`;
+        let progressComplete = 0;
+        if (xhr.total > 0) {
+            progressComplete = Math.min(100, Math.round((xhr.loaded / xhr.total) * 100));
+        }
+        const loadingText = document.getElementById('loading-text');
+        if (loadingText) {
+            loadingText.textContent = `Loading 3D model: ${progressComplete}%`;
+        }
         console.log(`Loading model: ${xhr.loaded / xhr.total * 100}%`);
     }, (error) => {
         console.error(error);
